@@ -1,0 +1,18 @@
+<div class="gorev-ekle-container">
+  <h2>Yeni Görev Ekle</h2>
+  <form (ngSubmit)="gorevEkle()">
+    <div>
+      <label for="tur">Tür:</label>
+      <input type="text" id="tur" [(ngModel)]="yeniGorev.tur" name="tur" required>
+    </div>
+    <div>
+      <label for="icerik">İçerik:</label>
+      <input type="text" id="icerik" [(ngModel)]="yeniGorev.icerik" name="icerik" required>
+    </div>
+    <div>
+      <label for="atananKisi">Atanan Kişi:</label>
+      <input type="text" id="atananKisi" [(ngModel)]="yeniGorev.atananKisi" name="atananKisi" required>
+    </div>
+    <button type="submit">Görev Ekle</button>
+  </form>
+</div>

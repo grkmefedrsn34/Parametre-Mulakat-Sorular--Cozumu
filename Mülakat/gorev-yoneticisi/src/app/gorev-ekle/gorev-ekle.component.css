@@ -1,0 +1,61 @@
+.gorev-ekle-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.gorev-ekle-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gorev-ekle-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.gorev-ekle-container form div {
+  margin-bottom: 15px;
+}
+
+.gorev-ekle-container form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.gorev-ekle-container form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.gorev-ekle-container form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gorev-ekle-container form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .gorev-ekle-container {
+    padding: 10px;
+  }
+
+  .gorev-ekle-container form button {
+    font-size: 14px;
+  }
+}

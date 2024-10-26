@@ -1,0 +1,21 @@
+p-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+p-table th, p-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+p-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.selected {
+  background-color: yellow;
+}

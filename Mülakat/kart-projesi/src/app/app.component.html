@@ -1,0 +1,16 @@
+<nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="/card">Card</a>
+  <a routerLink="/list-item">List Item</a>
+</nav>
+<button (click)="addCard()">Yeni Kart Ekle</button>
+<div *ngFor="let card of cards; let i = index">
+  <app-card (addItem)="addItem()" (deleteCard)="deleteCard(i)">
+    <app-list-item *ngFor="let item of items; let j = index" [item]="item" [index]="j" [template]="itemTemplate" (deleteItem)="deleteItem(j)"></app-list-item>
+  </app-card>
+</div>
+
+<ng-template #itemTemplate let-item>
+  <div>{{ item.name }}</div>
+</ng-template>
+<router-outlet></router-outlet>

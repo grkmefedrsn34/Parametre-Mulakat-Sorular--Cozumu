@@ -1,0 +1,24 @@
+<p-table [value]="gorevler">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Görev No</th>
+      <th>Tür</th>
+      <th>İçerik</th>
+      <th>Atanan Kişi</th>
+      <th>Durum</th>
+      <th>İşlemler</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-gorev>
+    <tr>
+      <td>{{gorev.id}}</td>
+      <td>{{gorev.tur}}</td>
+      <td>{{gorev.icerik}}</td>
+      <td>{{gorev.atananKisi}}</td>
+      <td>{{gorev.durum}}</td>
+      <td>
+        <button (click)="gorevDurumunuGuncelle(gorev)">Durumu Güncelle</button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>

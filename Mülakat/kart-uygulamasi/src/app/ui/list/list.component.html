@@ -1,0 +1,4 @@
+<div class="card-container">
+  <app-kart *ngFor="let kart of kartlar" [kart]="kart" (remove)="removeKart(kart.id)"></app-kart>
+  <button (click)="addKart()">Kart Ekle</button>
+</div>

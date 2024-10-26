@@ -1,0 +1,23 @@
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.list-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list-item button:hover {
+  background-color: #c82333;
+}
